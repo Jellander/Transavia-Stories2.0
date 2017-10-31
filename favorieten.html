@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Transavia Stories</title>
+    <link rel="stylesheet" href="style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+</head>
+
+<body>
+    <header>
+        <button onclick="toggleSideBar();" id="filterknop">Filters</button>
+        <img src="images/logo.png" alt="Transavia stories" id="headerLogo">
+        <div id="counter">1</div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="favorieten.html">
+                        <img src="images/Iconen/icoon-favorieten.png" alt="favorieten" id="favorietenIcoon">
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <img src="images/Iconen/icoon-login.png" alt="login" id="loginIcoon">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <img src="images/Iconen/icoon-home.png" alt="home" id="homeIcoon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>74. Bejaard</h2>
+            <img src="images/download.png" alt="verhaal is gedownload" id="downloadIcoon" class="nietZichtbaar">
+            <div class="circle">
+                <svg class="circleTrack">
+            <circle cx="50%" cy="50%" r="39%" stroke="#b1e0c9" stroke-width="6" fill="none"></circle>
+            </svg>
+                <svg class="circleFill">
+            <circle cx="50%" cy="50%" r="39%" stroke="#00D66C" stroke-width="6" fill="none"></circle>
+            </svg>
+            </div>
+            <p>De chauffeur kijkt verveeld maar vooral ook licht geïrriteerd via zijn achteruitkijkspiegel toe hoe ik samen met mijn kleinzoon, die in zijn kinderwagen ligt te slapen, bus 21 uitstap. Waar die lichte irritatie vandaan komt weet ik niet, want dit is de eindhalte, de goede man hoeft de komende twintig minuten nergens naartoe. Het zal […] </p>
+            <footer>
+                <div class="hartAchtergrond">
+                    <img src="images/favorite-active.png" alt="favorietenKnop">
+                </div>
+                <form action="verhaal_bejaard.html">
+                    <button type="submit" class="leesVerder">Lees verder ></button>
+                </form>
+            </footer>
+        </article>
+    </main>
+
+    <aside>
+        <h1>99 Variaties op 1 gebeurtenis</h1>
+        <form>
+            <fieldset>
+                <legend>Ik wil een verandering in:</legend>
+                <input type="checkbox" id="c1" name="perspectief">
+                <label for="c1" class=labelForm><span></span>Perspectief</label>
+                <input type="checkbox" id="c2" name="schrijver">
+                <label for="c2" class=labelForm><span></span>Schrijver</label>
+                <input type="checkbox" id="c3" name="tijd/plaats">
+                <label for="c3" class=labelForm><span></span>Tijd / Plaats</label>
+                <input type="checkbox" id="c4" name="schrijfstijl">
+                <label for="c4" class=labelForm><span></span>Schrijfstijl</label>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Ik wil sorteren op:</legend>
+                <input type="radio" id="r1" name="sorteren" checked="checked">
+                <label for="r1" class=labelForm><span></span>Trending</label>
+                <input type="radio" id="r2" name="sorteren">
+                <label for="r2" class=labelForm><span></span>Aanbevolen</label>
+                <input type="radio" id="r3" name="sorteren">
+                <label for="r3" class=labelForm><span></span>Nieuw naar oud</label>
+                <input type="radio" id="r4" name="sorteren">
+                <label for="r4" class=labelForm><span></span>Oud naar nieuw</label>
+            </fieldset>
+        </form>
+        <form>
+            <fieldset id="zoekVeld">
+                <legend>Zoeken:</legend>
+                <input id="zoeken" type="text" placeholder="zoeken" name="search">
+                <button id=zoekKnop><img id="zoekIcoon"src="images/zoeken.png" alt="zoeken"></button>
+            </fieldset>
+        </form>
+        <form>
+            <fieldset>
+                <legend>Download favorieten</legend>
+                <div class="onoffswitch">
+                    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" onclick="downloadStatus();">
+                    <label class="onoffswitch-label" for="myonoffswitch"></label>
+                </div>
+            </fieldset>
+        </form>
+    </aside>
+
+    <script src="js/functies.js"></script>
+</body>
+
+</html>

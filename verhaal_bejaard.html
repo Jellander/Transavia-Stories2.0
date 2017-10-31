@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Transavia Stories</title>
+    <link rel="stylesheet" href="style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Transavia stories" id="headerLogo">
+        <div id="counter">0</div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="favorieten.html">
+                        <img src="images/Iconen/icoon-favorieten.png" alt="favorieten" id="favorietenIcoon">
+                    </a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <img src="images/Iconen/icoon-login.png" alt="login" id="loginIcoon">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <img src="images/Iconen/icoon-home.png" alt="home" id="homeIcoon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="mainVerhalen">
+        <img src="images/verhalen/bejaardDesktop.png" alt="bejaard desktop" class="verhaalDesktop">
+        <img src="images/verhalen/bejaardTablet.png" alt="bejaard tablet" class="verhaalTablet">
+        <img src="images/verhalen/bejaardMobile.png" alt="bejaard mobile" class="verhaalMobile">
+
+        <button class="likeButton" onclick="likeToggle();">Leuk verhaal</button>
+        <div id="likeCounter">65
+            <img src="images/like.png " alt="like " class="thumbsUp ">
+        </div>
+    </main>
+
+    <script src="js/functies.js "></script>
+</body>
+
+</html>
